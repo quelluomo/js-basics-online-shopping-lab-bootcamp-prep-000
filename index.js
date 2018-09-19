@@ -44,7 +44,6 @@ function total() {
     }
 
 }
-
 /*
 function total() {
   // write your code here
