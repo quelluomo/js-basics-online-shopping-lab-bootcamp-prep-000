@@ -35,6 +35,7 @@ function viewCart() {
   }
   return yourCart;
 }
+/*
 function total() {
   var partial = 0;
     for (let i = 0; i < cart.length; i++) {
@@ -43,6 +44,17 @@ function total() {
     }
 
 }
+*/
+
+function total() {
+  // write your code here
+  var cartTotal = 0;
+  for (let i = 0; i < cart.length; i++) {
+    cartTotal += cart[i].itemPrice;
+  }
+  return cartTotal;
+}
+
 function removeFromCart(item) {
   // write your code here
 }
