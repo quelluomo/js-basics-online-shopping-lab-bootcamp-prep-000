@@ -37,10 +37,10 @@ function viewCart() {
 }
 
 function total() {
-  var part = 0;
+  var cartTotal = 0;
     for (let i = 0; i < cart.length; i++) {
-      part += cart[i].itemPrice;
-    return part;
+      cartTotal += cart[i].itemPrice;
+    return cartTotal;
     }
 
 }
