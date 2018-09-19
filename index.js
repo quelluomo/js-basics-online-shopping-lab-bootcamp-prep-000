@@ -37,7 +37,9 @@ function viewCart() {
 }
 function total() {
   var partial = 0;
-    for (let i = 0; i < partial.)
+    for (let i = 0; i < partial.length; i++) {
+      parial = partial
+    }
 }
 
 function removeFromCart(item) {
