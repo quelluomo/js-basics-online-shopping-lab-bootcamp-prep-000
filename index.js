@@ -55,13 +55,14 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
+  var cartPartial = 0;
+    for (let i = 0; i < cart.length; i++) {
+    cartPartial += cart[i].itemPrice;
+    }
   if (cardNumber === undefined) {
     return `Sorry, we don't have a credit card on file for you.`;
   }
   else {
-    for (let i = 0; i < cart.length; i++) {
-    cartPartial += cart[i].itemPrice;
-  }
     cart.length = 0;
     return `Your total cost is $${cartPartial()}, which will be charged to the card ${cardNumber}.`
   }
