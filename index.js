@@ -38,7 +38,7 @@ function viewCart() {
 function total() {
   var partial = 0;
     for (let i = 0; i < partial.length; i++) {
-      parial = cart[i].itemPrice;
+      parial += cart[i].itemPrice;
     return partial;
     }
 }
