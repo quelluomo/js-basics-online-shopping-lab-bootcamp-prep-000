@@ -59,8 +59,10 @@ function placeOrder(cardNumber) {
     return `Sorry, we don't have a credit card on file for you.`;
   }
   else {
-    var finalCost = total;
+    for (let i = 0; i < cart.length; i++) {
+    cartPartial += cart[i].itemPrice;
+  }
     cart.length = 0;
-    return `Your total cost is $${finalCost()}, which will be charged to the card ${cardNumber}.`
+    return `Your total cost is $${cartPartial()}, which will be charged to the card ${cardNumber}.`
   }
 }
