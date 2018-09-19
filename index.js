@@ -37,12 +37,12 @@ function viewCart() {
 }
 function total() {
   var partial = 0;
-    for (let i = 0; i < partial.length; i++) {
-      parial += cart[i].itemPrice;
+    for (let i = 0; i < cart.length; i++) {
+      parial = cart[i].itemPrice;
     return partial;
     }
-}
 
+}
 function removeFromCart(item) {
   // write your code here
 }
